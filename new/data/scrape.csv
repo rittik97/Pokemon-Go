@@ -1,0 +1,232 @@
+id,name,types_one,attack,defense,hp,catch,flee,candy,type
+1,Bulbasaur,"['Grass', 'Poison']",128,118,111,20%,10%,25,Grass
+2,Ivysaur,"['Grass', 'Poison']",155,151,143,10%,7%,100,Grass
+3,Venusaur,"['Grass', 'Poison']",190,198,189,5%,5%,—,Grass
+4,Charmander,['Fire'],118,116,93,20%,10%,25,Fire
+5,Charmeleon,['Fire'],151,158,126,10%,7%,100,Fire
+6,Charizard,"['Fire', 'Flying']",186,223,173,5%,5%,—,Fire
+7,Squirtle,['Water'],127,94,121,20%,10%,25,Water
+8,Wartortle,['Water'],153,126,155,10%,7%,100,Water
+9,Blastoise,['Water'],188,171,207,5%,5%,—,Water
+10,Caterpie,['Bug'],128,55,55,50%,20%,12,Bug
+11,Metapod,['Bug'],137,45,80,25%,9%,50,Bug
+12,Butterfree,"['Bug', 'Flying']",155,167,137,12.5%,6%,—,Bug
+13,Weedle,"['Bug', 'Poison']",120,63,50,50%,20%,12,Bug
+14,Kakuna,"['Bug', 'Poison']",128,46,75,25%,9%,50,Bug
+15,Beedrill,"['Bug', 'Poison']",163,169,130,12.5%,6%,—,Bug
+16,Pidgey,"['Normal', 'Flying']",120,85,73,50%,20%,12,Normal
+17,Pidgeotto,"['Normal', 'Flying']",160,117,105,25%,9%,50,Normal
+18,Pidgeot,"['Normal', 'Flying']",195,166,154,12.5%,6%,—,Normal
+19,Rattata,['Normal'],102,103,70,50%,20%,25,Normal
+20,Raticate,['Normal'],146,161,139,20%,7%,—,Normal
+21,Spearow,"['Normal', 'Flying']",120,112,60,50%,15%,50,Normal
+22,Fearow,"['Normal', 'Flying']",163,182,133,20%,7%,—,Normal
+23,Ekans,['Poison'],111,110,97,50%,15%,50,Poison
+24,Arbok,['Poison'],155,167,153,20%,7%,—,Poison
+25,Pikachu,['Electric'],111,112,96,20%,10%,50,Electric
+26,Raichu,['Electric'],155,193,151,10%,6%,—,Electric
+27,Sandshrew,['Ground'],137,126,120,50%,10%,50,Ground
+28,Sandslash,['Ground'],181,182,175,20%,6%,—,Ground
+29,Nidoran♀,['Poison'],146,86,89,50%,15%,25,Poison
+30,Nidorina,['Poison'],172,117,120,25%,7%,100,Poison
+31,Nidoqueen,"['Poison', 'Ground']",207,180,173,12.5%,5%,—,Poison
+32,Nidoran♂,['Poison'],130,105,76,50%,15%,25,Poison
+33,Nidorino,['Poison'],156,137,111,25%,7%,100,Poison
+34,Nidoking,"['Poison', 'Ground']",191,204,156,12.5%,5%,—,Poison
+35,Clefairy,['Fairy'],172,107,108,30%,10%,50,Fairy
+36,Clefable,['Fairy'],216,178,162,10%,6%,—,Fairy
+37,Vulpix,['Fire'],116,96,109,30%,10%,50,Fire
+38,Ninetales,['Fire'],177,169,190,10%,6%,—,Fire
+39,Jigglypuff,"['Normal', 'Fairy']",251,80,41,50%,10%,50,Normal
+40,Wigglytuff,"['Normal', 'Fairy']",295,156,90,20%,6%,—,Normal
+41,Zubat,"['Poison', 'Flying']",120,83,73,50%,20%,25,Poison
+42,Golbat,"['Poison', 'Flying']",181,161,150,20%,7%,100,Poison
+43,Oddish,"['Grass', 'Poison']",128,131,112,60%,15%,25,Grass
+44,Gloom,"['Grass', 'Poison']",155,153,136,30%,7%,100,Grass
+45,Vileplume,"['Grass', 'Poison']",181,202,167,15%,5%,—,Grass
+46,Paras,"['Bug', 'Grass']",111,121,99,40%,15%,50,Bug
+47,Parasect,"['Bug', 'Grass']",155,165,146,20%,7%,—,Bug
+48,Venonat,"['Bug', 'Poison']",155,100,100,50%,15%,50,Bug
+49,Venomoth,"['Bug', 'Poison']",172,179,143,20%,7%,—,Bug
+50,Diglett,['Ground'],67,109,78,50%,10%,50,Ground
+51,Dugtrio,['Ground'],111,167,134,20%,6%,—,Ground
+52,Meowth,['Normal'],120,92,78,50%,15%,50,Normal
+53,Persian,['Normal'],163,150,136,20%,7%,—,Normal
+54,Psyduck,['Water'],137,122,95,50%,10%,50,Water
+55,Golduck,['Water'],190,191,162,20%,6%,—,Water
+56,Mankey,['Fighting'],120,148,82,50%,10%,50,Fighting
+57,Primeape,['Fighting'],163,207,138,20%,6%,—,Fighting
+58,Growlithe,['Fire'],146,136,93,30%,10%,50,Fire
+59,Arcanine,['Fire'],207,227,166,10%,6%,—,Fire
+60,Poliwag,['Water'],120,101,82,50%,15%,25,Water
+61,Poliwhirl,['Water'],163,130,123,25%,7%,100,Water
+62,Poliwrath,"['Water', 'Fighting']",207,182,184,12.5%,5%,—,Water
+63,Abra,['Psychic'],93,195,82,50%,99%,25,Psychic
+64,Kadabra,['Psychic'],120,232,117,25%,7%,100,Psychic
+65,Alakazam,['Psychic'],146,271,167,10%,5%,—,Psychic
+66,Machop,['Fighting'],172,137,82,50%,10%,25,Fighting
+67,Machoke,['Fighting'],190,177,125,25%,7%,100,Fighting
+68,Machamp,['Fighting'],207,234,159,10%,5%,—,Fighting
+69,Bellsprout,"['Grass', 'Poison']",137,139,61,50%,15%,25,Grass
+70,Weepinbell,"['Grass', 'Poison']",163,172,92,25%,7%,100,Grass
+71,Victreebel,"['Grass', 'Poison']",190,207,135,12.5%,5%,—,Grass
+72,Tentacool,"['Water', 'Poison']",120,97,149,50%,15%,50,Water
+73,Tentacruel,"['Water', 'Poison']",190,166,209,20%,7%,—,Water
+74,Geodude,"['Rock', 'Ground']",120,132,132,50%,10%,25,Rock
+75,Graveler,"['Rock', 'Ground']",146,164,164,25%,7%,100,Rock
+76,Golem,"['Rock', 'Ground']",190,211,198,12.5%,5%,—,Rock
+77,Ponyta,['Fire'],137,170,127,40%,10%,50,Fire
+78,Rapidash,['Fire'],163,207,162,15%,6%,—,Fire
+79,Slowpoke,"['Water', 'Psychic']",207,109,98,50%,10%,50,Water
+80,Slowbro,"['Water', 'Psychic']",216,177,180,20%,6%,—,Water
+81,Magnemite,"['Electric', 'Steel']",93,165,121,50%,10%,25,Electric
+82,Magneton,"['Electric', 'Steel']",137,223,169,20%,6%,100,Electric
+83,Farfetch'd,"['Normal', 'Flying']",141,124,115,30%,9%,—,Normal
+84,Doduo,"['Normal', 'Flying']",111,158,83,50%,10%,50,Normal
+85,Dodrio,"['Normal', 'Flying']",155,218,140,20%,6%,—,Normal
+86,Seel,['Water'],163,85,121,50%,9%,50,Water
+87,Dewgong,"['Water', 'Ice']",207,139,177,20%,6%,—,Water
+88,Grimer,['Poison'],190,135,90,50%,10%,50,Poison
+89,Muk,['Poison'],233,190,172,20%,6%,—,Poison
+90,Shellder,['Water'],102,116,134,50%,10%,50,Water
+91,Cloyster,"['Water', 'Ice']",137,186,256,20%,6%,—,Water
+92,Gastly,"['Ghost', 'Poison']",102,186,67,40%,10%,25,Ghost
+93,Haunter,"['Ghost', 'Poison']",128,223,107,20%,7%,100,Ghost
+94,Gengar,"['Ghost', 'Poison']",155,261,149,10%,5%,—,Ghost
+95,Onix,"['Rock', 'Ground']",111,85,232,20%,9%,50,Rock
+96,Drowzee,['Psychic'],155,89,136,50%,10%,50,Psychic
+97,Hypno,['Psychic'],198,144,193,20%,6%,—,Psychic
+98,Krabby,['Water'],102,181,124,50%,15%,50,Water
+99,Kingler,['Water'],146,240,181,20%,7%,—,Water
+100,Voltorb,['Electric'],120,109,111,50%,10%,50,Electric
+101,Electrode,['Electric'],155,173,173,20%,6%,—,Electric
+102,Exeggcute,"['Grass', 'Psychic']",155,107,125,50%,10%,50,Grass
+103,Exeggutor,"['Grass', 'Psychic']",216,233,149,20%,6%,—,Grass
+104,Cubone,['Ground'],137,90,144,40%,10%,50,Ground
+105,Marowak,['Ground'],155,144,186,15%,6%,—,Ground
+106,Hitmonlee,['Fighting'],137,224,181,20%,9%,—,Fighting
+107,Hitmonchan,['Fighting'],137,193,197,20%,9%,—,Fighting
+108,Lickitung,['Normal'],207,108,137,20%,9%,100,Normal
+109,Koffing,['Poison'],120,119,141,50%,10%,50,Poison
+110,Weezing,['Poison'],163,174,197,20%,6%,—,Poison
+111,Rhyhorn,"['Ground', 'Rock']",190,140,127,50%,10%,25,Ground
+112,Rhydon,"['Ground', 'Rock']",233,222,171,5%,6%,100,Ground
+113,Chansey,['Normal'],487,60,128,20%,9%,50,Normal
+114,Tangela,['Grass'],163,183,169,40%,9%,100,Grass
+115,Kangaskhan,['Normal'],233,181,165,20%,9%,—,Normal
+116,Horsea,['Water'],102,129,103,50%,10%,25,Water
+117,Seadra,['Water'],146,187,156,20%,6%,100,Water
+118,Goldeen,['Water'],128,123,110,50%,15%,50,Water
+119,Seaking,['Water'],190,175,147,20%,7%,—,Water
+120,Staryu,['Water'],102,137,112,50%,15%,50,Water
+121,Starmie,"['Water', 'Psychic']",155,210,184,20%,6%,—,Water
+122,Mr. Mime,"['Psychic', 'Fairy']",120,192,205,30%,9%,—,Psychic
+123,Scyther,"['Bug', 'Flying']",172,218,170,30%,9%,50,Bug
+124,Jynx,"['Ice', 'Psychic']",163,223,151,30%,9%,—,Ice
+125,Electabuzz,['Electric'],163,198,158,20%,9%,100,Electric
+126,Magmar,['Fire'],163,206,154,20%,9%,100,Fire
+127,Pinsir,['Bug'],163,238,182,30%,9%,—,Bug
+128,Tauros,['Normal'],181,198,183,30%,9%,—,Normal
+129,Magikarp,['Water'],85,29,85,70%,15%,400,Water
+130,Gyarados,"['Water', 'Flying']",216,237,186,10%,7%,—,Water
+131,Lapras,"['Water', 'Ice']",277,165,174,5%,9%,—,Water
+132,Ditto,['Normal'],134,91,91,20%,10%,—,Normal
+133,Eevee,['Normal'],146,104,114,40%,10%,25,Normal
+134,Vaporeon,['Water'],277,205,161,12.5%,6%,—,Water
+135,Jolteon,['Electric'],163,232,182,12.5%,6%,—,Electric
+136,Flareon,['Fire'],163,246,179,12.5%,6%,—,Fire
+137,Porygon,['Normal'],163,153,136,40%,9%,25,Normal
+138,Omanyte,"['Rock', 'Water']",111,155,153,40%,9%,50,Rock
+139,Omastar,"['Rock', 'Water']",172,207,201,15%,5%,—,Rock
+140,Kabuto,"['Rock', 'Water']",102,148,140,40%,9%,50,Rock
+141,Kabutops,"['Rock', 'Water']",155,220,186,15%,5%,—,Rock
+142,Aerodactyl,"['Rock', 'Flying']",190,221,159,20%,9%,—,Rock
+143,Snorlax,['Normal'],330,190,169,5%,9%,—,Normal
+144,Articuno,"['Ice', 'Flying']",207,192,236,3%,10%,—,Ice
+145,Zapdos,"['Electric', 'Flying']",207,253,185,3%,10%,—,Electric
+146,Moltres,"['Fire', 'Flying']",207,251,181,3%,10%,—,Fire
+147,Dratini,['Dragon'],121,119,91,40%,9%,25,Dragon
+148,Dragonair,['Dragon'],156,163,135,10%,6%,100,Dragon
+149,Dragonite,"['Dragon', 'Flying']",209,263,198,5%,5%,—,Dragon
+150,Mewtwo,['Psychic'],214,300,182,6%,10%,—,Psychic
+151,Mew,['Psychic'],225,210,210,100%,0%,—,Psychic
+152,Chikorita,['Grass'],128,92,122,20%,10%,25,Grass
+153,Bayleef,['Grass'],155,122,155,12.5%,7%,100,Grass
+154,Meganium,['Grass'],190,168,202,5%,5%,—,Grass
+155,Cyndaquil,['Fire'],118,116,93,20%,10%,25,Fire
+156,Quilava,['Fire'],151,158,126,12.5%,7%,100,Fire
+157,Typhlosion,['Fire'],186,223,173,5%,5%,—,Fire
+158,Totodile,['Water'],137,117,109,20%,10%,25,Water
+159,Croconaw,['Water'],163,150,142,12.5%,7%,100,Water
+160,Feraligatr,['Water'],198,205,188,5%,5%,—,Water
+161,Sentret,['Normal'],111,79,73,50%,20%,25,Normal
+162,Furret,['Normal'],198,148,125,15%,7%,—,Normal
+163,Hoothoot,"['Normal', 'Flying']",155,67,88,50%,15%,50,Normal
+164,Noctowl,"['Normal', 'Flying']",225,145,156,15%,7%,—,Normal
+165,Ledyba,"['Bug', 'Flying']",120,72,118,50%,20%,25,Bug
+166,Ledian,"['Bug', 'Flying']",146,107,179,15%,7%,—,Bug
+167,Spinarak,"['Bug', 'Poison']",120,105,73,50%,20%,50,Bug
+168,Ariados,"['Bug', 'Poison']",172,161,124,15%,7%,—,Bug
+169,Crobat,"['Poison', 'Flying']",198,194,178,10%,5%,—,Poison
+170,Chinchou,"['Water', 'Electric']",181,106,97,40%,10%,50,Water
+171,Lanturn,"['Water', 'Electric']",268,146,137,15%,7%,—,Water
+172,Pichu,['Electric'],85,77,53,—,5%,25,Electric
+173,Cleffa,['Fairy'],137,75,79,—,5%,25,Fairy
+174,Igglybuff,"['Normal', 'Fairy']",207,69,32,—,5%,25,Normal
+175,Togepi,['Fairy'],111,67,116,—,5%,25,Fairy
+176,Togetic,"['Fairy', 'Flying']",146,139,181,20%,5%,100,Fairy
+177,Natu,"['Psychic', 'Flying']",120,134,89,40%,15%,50,Psychic
+178,Xatu,"['Psychic', 'Flying']",163,192,146,15%,7%,—,Psychic
+179,Mareep,['Electric'],146,114,79,50%,10%,25,Electric
+180,Flaaffy,['Electric'],172,145,109,25%,7%,100,Electric
+181,Ampharos,['Electric'],207,211,169,12.5%,5%,—,Electric
+182,Bellossom,['Grass'],181,169,186,5%,5%,—,Grass
+183,Marill,"['Water', 'Fairy']",172,37,93,50%,10%,25,Water
+184,Azumarill,"['Water', 'Fairy']",225,112,152,15%,7%,—,Water
+185,Sudowoodo,['Rock'],172,167,176,12.5%,5%,—,Rock
+186,Politoed,['Water'],207,174,179,10%,5%,—,Water
+187,Hoppip,"['Grass', 'Flying']",111,67,94,50%,12%,25,Grass
+188,Skiploom,"['Grass', 'Flying']",146,91,120,25%,7%,100,Grass
+189,Jumpluff,"['Grass', 'Flying']",181,118,183,12.5%,5%,—,Grass
+190,Aipom,['Normal'],146,136,112,20%,9%,100,Normal
+191,Sunkern,['Grass'],102,55,55,50%,9%,50,Grass
+192,Sunflora,['Grass'],181,185,135,10%,7%,—,Grass
+193,Yanma,"['Bug', 'Flying']",163,154,94,30%,10%,100,Bug
+194,Wooper,"['Water', 'Ground']",146,75,66,40%,10%,50,Water
+195,Quagsire,"['Water', 'Ground']",216,152,143,15%,7%,—,Water
+196,Espeon,['Psychic'],163,261,175,12.5%,5%,—,Psychic
+197,Umbreon,['Dark'],216,126,240,12.5%,5%,—,Dark
+198,Murkrow,"['Dark', 'Flying']",155,175,87,20%,10%,100,Dark
+199,Slowking,"['Water', 'Psychic']",216,177,180,10%,5%,—,Water
+200,Misdreavus,['Ghost'],155,167,154,30%,7%,100,Ghost
+201,Unown,['Psychic'],134,136,91,30%,10%,—,Psychic
+202,Wobbuffet,['Psychic'],382,60,106,25%,7%,—,Psychic
+203,Girafarig,"['Normal', 'Psychic']",172,182,133,30%,7%,—,Normal
+204,Pineco,['Bug'],137,108,122,40%,12%,50,Bug
+205,Forretress,"['Bug', 'Steel']",181,161,205,15%,7%,—,Bug
+206,Dunsparce,['Normal'],225,131,128,30%,20%,—,Normal
+207,Gligar,"['Ground', 'Flying']",163,143,184,20%,7%,100,Ground
+208,Steelix,"['Steel', 'Ground']",181,148,272,10%,5%,—,Steel
+209,Snubbull,['Fairy'],155,137,85,40%,10%,50,Fairy
+210,Granbull,['Fairy'],207,212,131,15%,8%,—,Fairy
+211,Qwilfish,"['Water', 'Poison']",163,184,138,30%,8%,—,Water
+212,Scizor,"['Bug', 'Steel']",172,236,181,5%,5%,—,Bug
+213,Shuckle,"['Bug', 'Rock']",85,17,396,30%,7%,—,Bug
+214,Heracross,"['Bug', 'Fighting']",190,234,179,30%,9%,—,Bug
+215,Sneasel,"['Dark', 'Ice']",146,189,146,20%,7%,100,Dark
+216,Teddiursa,['Normal'],155,142,93,50%,20%,50,Normal
+217,Ursaring,['Normal'],207,236,144,15%,7%,—,Normal
+218,Slugma,['Fire'],120,118,71,30%,10%,50,Fire
+219,Magcargo,"['Fire', 'Rock']",137,139,191,12.5%,6%,—,Fire
+220,Swinub,"['Ice', 'Ground']",137,90,69,30%,10%,25,Ice
+221,Piloswine,"['Ice', 'Ground']",225,181,138,12.5%,6%,100,Ice
+222,Corsola,"['Water', 'Rock']",146,118,156,30%,12%,—,Water
+223,Remoraid,['Water'],111,127,69,50%,10%,50,Water
+224,Octillery,['Water'],181,197,141,15%,7%,—,Water
+225,Delibird,"['Ice', 'Flying']",128,128,90,20%,20%,—,Ice
+226,Mantine,"['Water', 'Flying']",163,148,226,30%,7%,—,Water
+227,Skarmory,"['Steel', 'Flying']",163,148,226,20%,9%,—,Steel
+228,Houndour,"['Dark', 'Fire']",128,152,83,40%,10%,50,Dark
+229,Houndoom,"['Dark', 'Fire']",181,224,144,15%,6%,—,Dark
+230,Kingdra,"['Water', 'Dragon']",181,194,194,10%,5%,—,Water
+231,Phanpy,['Ground'],207,107,98,50%,20%,50,Ground

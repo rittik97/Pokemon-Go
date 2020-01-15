@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pokemon</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="static/css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/line-awesome/css/line-awesome.min.css">
+  <!--<script src='static/js/main.js'></script>
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+  <link rel="stylesheet" href="static/css/style.css"/>
+  <link rel="icon" href="static/images/poke.png">
+</head>
+<body class="form-v2">
+	<div class="page-content">
+		<div class="form-v2-content">
+			<div class="form-left">
+				<img src="static/images/poke.jpg" alt="Pokemon" width='400px;' height='700px;'>
+
+			</div>
+      <form class="form-detail" action="/hist" method="post" id="myform">
+        <div class="form-row">
+          <label for="default">You can expect to find Pokemon of the type:</label>
+          <br />
+          <input type="text" name="temp" id="result" value={{trial}}>
+
+
+        </div>
+      </form>
+
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
