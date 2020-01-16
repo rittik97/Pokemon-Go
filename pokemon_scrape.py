@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
-
+import numpy as np
 
 data=pd.read_csv('data/pokemon_go.csv')
 url='https://pokemondb.net/go/pokedex'
@@ -50,7 +50,7 @@ while count<250:
             types.append(i.text)
             #elif i==1:
             #    types_two.append(i.text)
-        type_one.append(types)
+        types_one.append(types)
         attack.append(x[3].text)
         defense.append(x[4].text)
         hp.append(x[5].text)
@@ -65,7 +65,6 @@ id,
 
 name,
 types_one,
-types_two,
 attack,
 defense,
 hp,
@@ -76,7 +75,6 @@ candy,
 'id',
 'name',
 'types_one',
-'types_two',
 'attack',
 'defense',
 'hp',
@@ -85,4 +83,36 @@ candy,
 'candy',
 ])
 
-pd.merge(left=data, right=d, how='left', left_on='latlng', right_on='key')
+new_data=pd.merge(left=data, right=d, how='left', left_on='pokedex_id', right_on='id')
+
+def extractor(x):
+    return x[0]
+d['type']=d['types_one'].apply(extractor)
+
+new_data.head(2)['type']
+
+d.to_csv('data/scrape.csv',index=False)
+d
+for i in np.unique(data['city']):
+    print(f'<option value="{i}">')
+
+'Breezy'
+'BreezyandMostlyCloudy'
+'BreezyandOvercast'
+'BreezyandPartlyCloudy'
+'Clear'
+'DangerouslyWindy'
+'Drizzle'
+'DrizzleandBreezy'
+'Dry'
+'DryandMostlyCloudy'
+'DryandPartlyCloudy'
+'Foggy'
+'HeavyRain'
+'Humid'
+'HumidandOvercast'
+, 'HumidandPartlyCloudy'
+, 'LightRain',
+       'LightRainandBreezy', 'MostlyCloudy', 'Overcast', 'PartlyCloudy',
+       'Rain', 'RainandWindy', 'Windy', 'WindyandFoggy',
+       'WindyandPartlyCloudy'

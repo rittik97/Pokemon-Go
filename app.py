@@ -12,25 +12,33 @@ app = flask.Flask(__name__, template_folder='templates')
 
 
 
-pipe = pickle.load(open("pipe.pkl", 'rb'))
+pipe = pickle.load(open("pipe_catboost.pkl", 'rb'))
 data=pd.DataFrame({
-    "close_to_water" : True,
+    "close_to_water" : False,
     'city':'Toronto',
-    "weather":'Foggy',
-    "temperature":[25.5],
-    "day" :'Thursday',
-    "morning" : True,
-    "afternoon": False,
-    "night": False
+    "weather":'clear',
+    "temperature":[2.5],
+    "day" :'Friday',
+    "morning" : False,
+    "afternoon": True,
+    "night": False,
+    "type": 'Fire',
+    "types":'city_hall'
 })
 pipe.predict(data)
-
+pipe[1].classes_[47]
+np.argmax(pipe.predict_proba(data))
 
 #-------- ROUTES GO HERE -----------#
 
 @app.route('/')
 def index():
     with open("templates/index.html", 'r') as p:
+       return p.read()
+
+@app.route('/predictions')
+def preds():
+    with open("templates/predictions.html", 'r') as p:
        return p.read()
 
 @app.route('/hist', methods=['POST'])
