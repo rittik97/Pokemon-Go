@@ -8,7 +8,7 @@ from jinja2 import Template
 
 app = flask.Flask(__name__, template_folder='templates')
 
-#-------- MODEL GOES HERE -----------#
+
 
 
 
@@ -33,7 +33,7 @@ np.argmax(pipe.predict_proba(data))
 
 @app.route('/')
 def index():
-    with open("templates/index.html", 'r') as p:
+    with open("templates/home.html", 'r') as p:
        return p.read()
 
 @app.route('/predictions')

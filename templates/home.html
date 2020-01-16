@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pokemon</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="static/css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/line-awesome/css/line-awesome.min.css">
+  <!--<script src='static/js/main.js'></script>
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+  <link rel="stylesheet" href="static/css/style.css"/>
+  <link rel="icon" href="static/images/poke.png">
+  <script type="text/javascript" src='static/js/dropdown.js'></script>
+</head>
+<body class="form-v2">
+	<div class="page-content">
+		<div class="form-v2-content">
+			<div class="form-left">
+				<img src="static/images/poke.jpg" alt="Pokemon" width='400px;' height='800px;'>
+
+			</div>
+			<form class="form-detail" action="/hist" method="post" id="myform">
+				<h2>Enter Details:</h2>
+				<div class="form-row">
+					<label for="default">Enter City:</label>
+					<!--<input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
+            -->
+          <input type="text" name="city" list="city_list" placeholder="e.g. Toronto" id="city">
+          <datalist id="city_list">
+             <option value="Toronto">
+             <option value="Edmonton">
+             <option value="Vancouver">
+             <option value="Chicago">
+          </<datalist>
+        </div>
+        <br />
+        <br />
+        <div class="form-row">
+					<label for="default">Select Pokemon:</label>
+					<!--<input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
+            -->
+          <input type="text" name="pokemon" list="poke_list" placeholder="Please select city first" disabled=true id='poke'>
+          <datalist id="poke_list">
+
+          </<datalist>
+        </div>
+        <select name="day" size="1">
+                  <option value="Thur">Thursday</option>
+                  <option value="Fri">Friday</option>
+                  <option value="Sat">Saturday</option>
+                  <option value="Sun">Sunday</option>
+        </select>
+
+
+        <br />
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Submit">
+				</div>
+			</form>
+		</div>
+	</div>
+  <<script type="text/javascript">
+    console.log(document.querySelector('input'));
+    console.log('hi2');
+    var elem = document.getElementById('city');
+    elem.addEventListener('input', getlists);
+    console.log(document.querySelector('input'));
+    let getlists = () =>{
+      console.log('hi3')
+      console.log(document.getElementById('city').value)
+    }
+  </script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

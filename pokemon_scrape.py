@@ -93,26 +93,3 @@ new_data.head(2)['type']
 
 d.to_csv('data/scrape.csv',index=False)
 d
-for i in np.unique(data['city']):
-    print(f'<option value="{i}">')
-
-'Breezy'
-'BreezyandMostlyCloudy'
-'BreezyandOvercast'
-'BreezyandPartlyCloudy'
-'Clear'
-'DangerouslyWindy'
-'Drizzle'
-'DrizzleandBreezy'
-'Dry'
-'DryandMostlyCloudy'
-'DryandPartlyCloudy'
-'Foggy'
-'HeavyRain'
-'Humid'
-'HumidandOvercast'
-, 'HumidandPartlyCloudy'
-, 'LightRain',
-       'LightRainandBreezy', 'MostlyCloudy', 'Overcast', 'PartlyCloudy',
-       'Rain', 'RainandWindy', 'Windy', 'WindyandFoggy',
-       'WindyandPartlyCloudy'
