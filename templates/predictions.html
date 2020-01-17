@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="static/css/predictions.css">
+	<meta charset="utf-8">
+	<title>Pokemon</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="static/css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/line-awesome/css/line-awesome.min.css">
+
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+
+  <link rel="stylesheet" href="static/css/predictions.css"/>
+  <link rel="icon" href="static/images/poke.png">
+
+
 </head>
-<body>
+<body class="form-v2">
 
-<div class="row">
-<h2>Responsive "Meet The Team" Section</h2>
-<p>Resize the browser window to see the effect.</p>
+	<div class="page-content">
+		<div class="form-v2-content">
 
-</div>
-<br>
-<br>
-<div class="row align-items-center">
-  <div class="col-6">
-    <div class="card">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+			<div class="form-left">
+				<img src="{{url}}" alt="Pokemon_Image"  width='350px;' height='80%;'>
+
+			</div>
+
+			<form class="form-detail" action="" method="post" >
+
+				<div class="form-row">
+
+
+
+					<h2 for="default">Best locations to search:</h2>
+            <h4>{{loc1}}</h4>
+            <h4>{{loc2}}</h4>
+
+
+          <h2 for="default">Best weather conditions to search:</h2>
+            <h4>{{weather1}}</h4>
+            <h4>{{weather2}}</h4>
+
+            <h2 for="default">Best days to search:</h2>
+              <h4>{{day1}}</h4>
+              <h4>{{day2}}</h4>
+
+
+          <h2 for="default">Best times to search:</h2>
+            <h4>{{time1}}</h4>
+            <h4>{{time2}}</h4>
+
+
+
+        </div>
+
+        <br />
+
+			</form>
+		</div>
+	</div>
+  <div class="page-content">
+    <div class="attr">
+      <div class="grid-container">
+        <div><h2 class="attribute">Type: {{type}}</h2></div>
+        <div><h2 class="attribute">Attack: {{attack}}</h2></div>
+        <div><h2 class="attribute">Defense: {{defense}}</h2></div>
+        <div><h2 class="attribute">HP: {{hp}}</h2></div>
       </div>
+
+
+
+
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src='static/js/dropdown.js'></script>
+  <script type="text/javascript">
 
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
+    //console.log(document.querySelector('input')); <h2 class="attribute">Eevve</h2>
 
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
+  </script>
 
-</body>
+
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import numpy as np
 
-data=pd.read_csv('data/pokemon_go.csv')
+data=pd.read_csv('data/final.csv')
 url='https://pokemondb.net/go/pokedex'
 r=requests.get(url)
 html=r.text
@@ -62,7 +62,6 @@ while count<250:
 
 d=pd.DataFrame(zip(
 id,
-
 name,
 types_one,
 attack,
@@ -83,13 +82,33 @@ candy,
 'candy',
 ])
 
-new_data=pd.merge(left=data, right=d, how='left', left_on='pokedex_id', right_on='id')
+d=pd.merge(left=data, right=d, how='left', left_on='pokedex_id', right_on='id')
 
 def extractor(x):
     return x[0]
 d['type']=d['types_one'].apply(extractor)
 
-new_data.head(2)['type']
+d.head(2)['type']
 
 d.to_csv('data/scrape.csv',index=False)
-d
+
+
+to=data[data['city']=='Toronto']['name'].unique()
+
+
+df = pd.DataFrame({'Toronto':to})
+selected_cities=['Edmonton','Vancouver','Chicago','Los_Angeles','New_York','Denver','Phoenix','Regina','Indianapolis','Winnipeg','Detroit', 'Montreal','Halifax']
+
+for city in selected_cities:
+    #temp=data[data['city']==city]['name'].unique()
+    temp = pd.DataFrame({city:data[data['city']==city]['name'].unique()})
+    df=pd.concat([df,temp], ignore_index=False, axis=1)
+
+
+df.to_csv('data/dropdowns.csv')
+df
+cities=['Toronto','Edmonton','Vancouver','Chicago','Los_Angeles','New_York','Denver','Phoenix','Regina','Indianapolis','Winnipeg','Detroit', 'Montreal','Halifax']
+strs=""
+for i in cities:
+    strs+='<option value="'+str(i)+'>'+"\n"
+strs

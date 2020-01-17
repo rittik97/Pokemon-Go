@@ -1,3 +1,12 @@
+.inval{
+	font-size: 10px;
+	font-style: italic;
+	font-family: 'Roboto', sans-serif;
+	color: red;
+	position: absolute;
+  left: 9%;
+	margin-top: 0px;
+}
 body {
 	margin:  0;
 }
@@ -23,7 +32,7 @@ body {
 }
 .form-v2-content  {
 	background: #fff;
-	width: 851px;
+	width: 40%;
 	border-radius: 15px;
 	-o-border-radius: 15px;
 	-ms-border-radius: 15px;

@@ -1,4 +1,45 @@
-console.log('hi')
+console.log('dropwdown.js')
+
+let getlists = () =>{
+
+  var cities = ['Toronto','Edmonton','Vancouver','Chicago','Los_Angeles','New_York','Denver','Phoenix','Regina','Indianapolis','Winnipeg','Detroit', 'Montreal','Halifax'];
+  var cit=(document.getElementById('city').value);
+  //console.log((document.getElementById('city').value));
+  val=(cities.includes(cit));
+  if (val==false) {
+    //console.log(val);
+    document.getElementById('disp').style.display="block";
+    document.getElementById('disp').innerHTML="Invalid Input";
+  }
+  if (val==true){
+    document.getElementById('disp').disabled=true;
+    document.getElementById('disp').innerHTML="Please Select Pokemon";
+    dropwdownAjax(cit)
+  }
+
+
+}
+
+$(function() {
+  //console.log(document.querySelector('input'));
+  //console.log('hi2');
+
+  var elem = document.getElementById('city');
+  elem.innerHTML="";
+  elem.addEventListener('input', getlists);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 const formToJSON = elements => [].reduce.call(elements, (data, element) => {
   data[element.name] = element.value;
@@ -16,11 +57,11 @@ if( document.readyState !== 'loading' ) {
 }
 
 function init() {
-  console.log(document.querySelector('input'));
-  console.log('hi2');
-  var elem = document.getElementById('city');
-  elem.addEventListener('input', getlist);
-  console.log(document.querySelector('input'));
+  //console.log(document.querySelector('input'));
+  //console.log('hi2');
+  //var elem = document.getElementById('city');
+  //elem.addEventListener('input', getlist);
+  //console.log(document.querySelector('input'));
 }
 
 const getlist = () =>{
@@ -51,4 +92,27 @@ function SendAjax(){
 
         }).done(function() {  })
         .fail(function(jqxhr, settings, ex) { alert('failed, ' + ex); });
+}
+
+
+function dropwdownAjax(city){
+    //var form = document.querySelector("form");
+    //const data = formToJSON(form.elements);
+    //console.log(data)
+    //console.log(JSON.stringify(data, null, "  "));
+
+    $.post('/dropdown',
+        { data: city,
+        processDataBoolean: false },
+        function(data2, status, xhr) {
+          data2=JSON.parse(data2);
+          var options=""
+          for (i = 0; i < data2.length; i++){
+            options=options+'<option value="'+data2[i]+'">'+"\n"
+          }
+          //console.log(options)
+          document.getElementById('poke_list').innerHTML=options;
+          document.getElementById('poke').disabled=false;
+        }).done(function() {  })
+        .fail(function(jqxhr, settings, ex) { alert('failed to fetch pokemon, ' + ex); });
 }
