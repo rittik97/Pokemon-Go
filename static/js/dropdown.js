@@ -41,28 +41,7 @@ $(function() {
 
 
 
-const formToJSON = elements => [].reduce.call(elements, (data, element) => {
-  data[element.name] = element.value;
-  return data;
-}, {});
 
-if( document.readyState !== 'loading' ) {
-    console.log( 'document is already ready, just execute code here' );
-    init();
-} else {
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log( 'document was not ready, place code here' );
-        init();
-    });
-}
-
-function init() {
-  //console.log(document.querySelector('input'));
-  //console.log('hi2');
-  //var elem = document.getElementById('city');
-  //elem.addEventListener('input', getlist);
-  //console.log(document.querySelector('input'));
-}
 
 const getlist = () =>{
   console.log('hi3')

@@ -110,5 +110,5 @@ df
 cities=['Toronto','Edmonton','Vancouver','Chicago','Los_Angeles','New_York','Denver','Phoenix','Regina','Indianapolis','Winnipeg','Detroit', 'Montreal','Halifax']
 strs=""
 for i in cities:
-    strs+='<option value="'+str(i)+'>'+"\n"
+    print('<option value="'+i+'">')
 strs

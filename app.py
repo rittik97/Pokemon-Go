@@ -61,9 +61,10 @@ def preds():
     return render_template('predictions.html', url=scrape[scrape['name ']==args.get('pokemon')]['url'].values[0], loc1=loc1, loc2=loc2,
         weather1=weather1, weather2=weather2, time1=time1, time2=time2, day1=day1, day2=day2,
         type=scrape[scrape['name ']==args.get('pokemon')]['types_one'].values[0],
-        attack=scrape[scrape['name ']==args.get('pokemon')]['attack'].values[0]
-        defense=scrape[scrape['name ']==args.get('pokemon')]['defense'].values[0]
-        hp=scrape[scrape['name ']==args.get('pokemon')]['hp'].values[0]
+        attack=scrape[scrape['name ']==args.get('pokemon')]['attack'].values[0],
+        defense=scrape[scrape['name ']==args.get('pokemon')]['defense'].values[0],
+        hp=scrape[scrape['name ']==args.get('pokemon')]['hp'].values[0],
+        name=args.get('pokemon')
     )
 
 

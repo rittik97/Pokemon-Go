@@ -1,3 +1,10 @@
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 44px;
+	align: center;
+}
 .attr{
 
 	font-family: 'Roboto', sans-serif;
@@ -16,9 +23,14 @@
   font-size: 28px;
   position: relative;
   padding: 6px 0 0 6px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   display:inline;
-
+	align-self: center;
+	border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 
 }
 
@@ -68,7 +80,7 @@ body {
 	-ms-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 10px;
 	position: relative;
 	display: flex;
 	display: -webkit-flex;
@@ -114,7 +126,7 @@ body {
 	padding-right: 9px;
 }
 .form-v2-content .form-detail {
-  padding: 100px 40px 20px 140px;
+  padding: 10px 40px 20px 140px;
 	position: relative;
 	width: 100%;
 }
@@ -122,7 +134,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #333;
-	font-size: 28px;
+	font-size: 36px;
 	position: relative;
 	padding: 6px 0 0;
 	margin-bottom: 25px;
