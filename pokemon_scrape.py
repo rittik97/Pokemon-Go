@@ -10,9 +10,7 @@ html=r.text
 soup=BeautifulSoup(html)
 
 
-
 id=[]
-#id.append(0)
 name=[]
 types_one=[]
 types_two=[]
@@ -92,7 +90,7 @@ d.head(2)['type']
 
 d.to_csv('data/scrape.csv',index=False)
 
-
+################# Prep. data for front-end #####################
 to=data[data['city']=='Toronto']['name'].unique()
 
 
@@ -100,7 +98,6 @@ df = pd.DataFrame({'Toronto':to})
 selected_cities=['Edmonton','Vancouver','Chicago','Los_Angeles','New_York','Denver','Phoenix','Regina','Indianapolis','Winnipeg','Detroit', 'Montreal','Halifax']
 
 for city in selected_cities:
-    #temp=data[data['city']==city]['name'].unique()
     temp = pd.DataFrame({city:data[data['city']==city]['name'].unique()})
     df=pd.concat([df,temp], ignore_index=False, axis=1)
 
